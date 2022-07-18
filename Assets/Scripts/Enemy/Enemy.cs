@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,6 +10,7 @@ public class Enemy : MonoBehaviour
 
     public int Reward => _reward;
     public Player Target => _target;
+
     public event UnityAction<Enemy> Dying;
 
     public void Init(Player target)
